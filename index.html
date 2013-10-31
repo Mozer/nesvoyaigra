@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Не своя игра</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Не своя игра" />
+	<meta name="keywords" content="Не своя игра" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />		
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>	
+	<script type='text/javascript' src='js/questions.js'></script>
+	<script type='text/javascript' src='js/script.js'></script>
+</head>
+<body>
+
+	<div class="wrap">
+		
+		<div class="top_wrap">
+			<table class="g_table game_field">
+			</table>
+		</div>
+		
+		<div class="bottom_wrap">
+			<div class="bottom_title">				
+				<br/><br/>
+				<div class="label"><a class="js_a show_more_players is_hidden">+</a></div>
+				<div class="clr">
+			</div>
+			<table class="g_table players_field">
+				<tr class="player_names">					
+					<td></td>
+					<td><input type="text" class="g_input player_name active" data-player="0" value="Игрок 1"></td>
+					<td><input type="text" class="g_input player_name active" data-player="1" value="Игрок 2"></td>
+					<td><input type="text" class="g_input player_name active" data-player="2" value="Игрок 3"></td>
+					<td><input type="text" class="g_input player_name additional hidden" data-player="3" value="Игрок 4"></td>
+					<td><input type="text" class="g_input player_name additional hidden" data-player="4" value="Игрок 5"></td>
+				</tr>
+				<tr class="player_scores">
+					<td>Очки</td>
+					<td><input type="text" class="g_input player_score active" data-player="0" value="0"></td>
+					<td><input type="text" class="g_input player_score active" data-player="1" value="0"></td>
+					<td><input type="text" class="g_input player_score active" data-player="2" value="0"></td>
+					<td><input type="text" class="g_input player_score additional hidden" data-player="3" value="0"></td>
+					<td><input type="text" class="g_input player_score additional hidden" data-player="4" value="0"></td>
+				</tr>
+				<tr class="player_penalties">
+					<td>Замечания</td>
+					<td><input type="text" class="g_input player_penalty active" data-player="0" value=""></td>
+					<td><input type="text" class="g_input player_penalty active" data-player="1" value=""></td>
+					<td><input type="text" class="g_input player_penalty active" data-player="2" value=""></td>
+					<td><input type="text" class="g_input player_penalty additional hidden" data-player="3" value=""></td>
+					<td><input type="text" class="g_input player_penalty additional hidden" data-player="4" value=""></td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>	
+	
+	<div class="pop_wrap hidden">
+		<div class="pop">
+			<div class="question_wrap">
+				<div class="pop_title_wrap">
+					<div class="question_topic">[-topic-]</div>
+					<div class="pop_close js_a">[x]</div>
+					<div class="show_answer js_a">[ответ]</div>
+					<div class="clr"></div>
+				</div>
+				
+				<div class="question_hider visible">
+					<div class="question_wrap_wrap">
+						<div class="question_img"></div>
+						<div class="question_body">[-question-]</div>
+						<div class="question_answer hidden">[-answer-]</div>
+					</div>					
+				</div>
+				
+				<div class="auction hidden">
+					<a class="js_a close_auction">Аукцион</a>
+				</div>
+			</div>
+			
+			<div class="answer_actions_wrap">				
+				<div class="timer_wrap">
+					<div class="js_a timer_time hidden">20</div>
+					<div class="js_a timer_start visible">время</div>
+				</div>
+				<div class="js_a answer_button answer_correct">верно</div>
+				<div class="js_a answer_button answer_wrong">неверно</div>
+				
+				<div class="answer_player">
+					<select>						
+					</select>
+				</div>
+				<div class="answer_points">
+					<input type="text" class="answer_points_input" value="0">
+				</div>							
+				<div class="clr"></div>
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
